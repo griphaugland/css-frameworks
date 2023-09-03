@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "sass src/scss:dist/css",
+    "bootstrap": "npm install bootstrap@latest",
+    "scss": "npm install sass",
+    "splide": "npm install @splidejs/splide",
     "watch": "sass --watch src/scss:dist/css"
   },
   "keywords": [],
