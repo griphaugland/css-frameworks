@@ -19,4 +19,6 @@
   })()
 
   new Splide( '#sliderProfile' ).mount();  
+  new Splide( '#sliderProfile2' ).mount();  
+  new Splide( '#sliderProfile3' ).mount();  
   

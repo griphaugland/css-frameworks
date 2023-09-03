@@ -18,7 +18,13 @@
       })
   })()
 
-  new Splide( '#slider1-feed' ).mount();  
-  new Splide( '#slider2-feed' ).mount();
-  new Splide( '#slider3-feed' ).mount();
+  new Splide( '#slider11-feed' ).mount();  
+  new Splide( '#slider12-feed' ).mount(); 
+  new Splide( '#slider13-feed' ).mount(); 
+  new Splide( '#slider21-feed' ).mount();
+  new Splide( '#slider22-feed' ).mount();
+  new Splide( '#slider23-feed' ).mount();
+  new Splide( '#slider31-feed' ).mount();
+  new Splide( '#slider32-feed' ).mount();
+  new Splide( '#slider33-feed' ).mount();
   
