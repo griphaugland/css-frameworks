@@ -14,8 +14,8 @@
     <script src="https://kit.fontawesome.com/17c7a6edf9.js" crossorigin="anonymous"></script>
     <script src="./script.js" defer></script>
   </head>
-  <body class="d-flex flex-column min-vh-100 vh-100 bg-primary">
-    <main class="h-auto" >
+  <body class="d-flex flex-column  min-vh-100 vh-100 bg-primary">
+    <main class="h-auto " >
       <section class="top">
         <div
           class="container-fluid"
@@ -23,7 +23,7 @@
           <div class="row">
             <div class="col p-0 m-0 transparent"></div>
             <div class="col py-5 logo-container">
-              <img src="./media/logo-black.png" class="logo-element img-fluid" />
+              <img src="./media/logo-black.png" class="d-md-none logo-element img-fluid" />
             </div>
             <div
               class="circle-container p-0 m-0 d-flex align-items-start overflow-hidden justify-content-end col"
@@ -33,8 +33,11 @@
           </div>
         </div>
       </section>
-      <section class="middle d-flex flex-column align-items-center">
-        <div class="form-container w-50 d-flex align-items-center justify-content-center">
+      <section class="middle d-flex flex-md-row flex-column p-md-5 m-md-5 align-items-center">
+        <div class="d-none d-md-flex align-items-center justify-content-center col py-5 logo-container">
+          <img src="./media/logo-black.png" class="logo-element w-75 img-fluid" />
+        </div>
+        <div class="form-container w-50 p-md-5 my-md-5 d-flex align-items-center justify-content-center">
             <form class="w-100 needs-validation" action="./feed/index.html" novalidate>
               <p class="font-monospace text-secondary">LOG IN</p>
               <div class="input-group has-validation">
