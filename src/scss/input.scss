@@ -1,0 +1,263 @@
+@import "./variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.btn-custom {   
+    @extend .btn-primary;
+    color: $tertiary;
+    background-color: $complimentary;
+    transition: 0.3s;
+    box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    width: 60px;
+    height: 35px;
+    border: none;
+    &:hover {
+    background-color: $custom-hover;
+    }
+    &-follow {
+        color: $tertiary;
+        width: 52px;
+        height: 52px;
+        transition: 0.3s;
+        background-color: $complimentary;
+        box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        &:hover {
+            background-color: $tertiary;
+        }
+    }
+    &-new-post {
+        background-color: $complimentary;
+        color: $tertiary;
+        width: 170px;
+        height: 60px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.6rem;
+        font-weight: 600;;
+        box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+    &-discover {
+        background-color: $tertiary;
+        color: $secondary;
+        width: 170px;
+        height: 60px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.6rem;
+        font-weight: 600;;
+        box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+    &-settings {
+        background-color: $tertiary;
+        color: $secondary;
+        width: 54px;
+        height: 60px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.6rem;
+        font-weight: 600;;
+        box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+.font-normal {
+  font-family: $font-family-base;
+}
+.identifier {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+}
+.slider-image-element {
+  box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.count {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.hamburger {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+    position: absolute;
+    width: 90%;
+    height: 2rem;
+    gap: 0.5rem;
+    z-index: 5;
+    box-shadow: none;
+  }
+.ham-bar {
+    box-shadow: none;
+}
+.navbar-toggler {
+    color: transparent;
+    
+}
+.navBg .nav-active {
+   background-color: $navBg; 
+}
+.navbar-nav {
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    position: fixed;
+    left:0;
+    background-color: $secondary;
+    z-index: 3;
+    animation: circle-fall-in;
+
+}
+.navbar-nav li a{
+    color: $complimentary;
+}
+.collapsing {
+    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.ham-bar {
+    display: block;
+    width: 1.5rem;
+    height: 0.3rem;
+    background-color: $secondary;
+    transition: 0.3s ease-in-out;
+  }
+  .ham-bar:nth-of-type(2) {
+    width: 1.5rem;
+  }
+ .bar-top {
+    width: 2rem;
+    height: 0.35rem;
+  }
+ .bar-bottom {
+    width: 1rem;
+    background-color: $complimentary;
+  }
+ .bar-mid {
+    width: 1.6rem;
+  }
+h3 {
+    font-family: $font-family-monospace;
+}
+.gray-font {
+    color: $light-bg-subtle;
+}
+.logo-container {
+    min-width: 170px;
+}
+.art-vector-container {
+    max-width: 500px;
+}
+
+.btn-custom-secondary {   
+    @extend .btn-custom;
+    background-color: $tertiary;
+    transition: 0.3s;
+    box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.credit-text {
+    font-size: $sub-sup-font-size;
+}
+.input-group-custom {
+    @extend .input-group;
+    font-family: $font-family-base;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    height: 40px;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid white;
+    padding-left: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    &::placeholder, :active, :focus {
+        color: #888585;
+    }
+} 
+.invalid-feedback-custom {
+    @extend .invalid-feedback;
+    position: absolute;
+    top: 2.5rem;
+    
+}
+.custom-height {
+    display: hidden !important;
+    min-height: 20px;
+}
+span {
+    border-radius: 5px;
+    box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.form-control {
+    border-radius: 5px;
+    box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    &:focus {
+        box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+}
+.container-custom {
+    @extend .container;
+    background-color: rgb(189, 189, 189);
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px 0px black;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    &-primary {
+        background-color: $blue;
+        border: 1px solid darkblue;
+        font-weight: 10000;
+    }
+    border-radius: 10px;
+    &-secondary {
+        background-color: $green;
+        border: 1px solid rgb(255, 255, 255);
+        font-weight: 600;
+    }
+    &-warning {
+        background-color: $orange;
+        border: 1px solid rgb(255, 0, 0);
+        font-weight: 600;
+    }
+}
+
+.profile-image-element {
+    width: 160px;
+    height: 160px;
+    box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+  
+.circle-fall-in {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0; /* Initial size */
+    height: 0; /* Initial size */
+    border-radius: 50%; /* to create a circle shape */
+    animation: growCircle 2s ease-in-out forwards; /* apply the animation */
+  }
+  
+  @keyframes growCircle {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 200vw; /* Double the screen width to cover the entire screen */
+      height: 200vh; /* Double the screen height to cover the entire screen */
+    }
+  }
