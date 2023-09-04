@@ -151,6 +151,7 @@ h3 {
 }
 .logo-container {
     min-width: 170px;
+    max-width: 500px;
 }
 .art-vector-container {
     max-width: 500px;
@@ -172,7 +173,6 @@ h3 {
     font-weight: $font-weight-semibold;
     height: 40px;
     width: 100%;
-    max-width: 500px;
     border: 2px solid white;
     padding-left: 0.5rem;
     border-radius: 5px;
@@ -181,6 +181,15 @@ h3 {
         color: #888585;
     }
 } 
+form {
+    max-width: 300px
+}
+.line {
+    height: 300px;
+    width: 2px;
+    color: $secondary;
+    background-color: $secondary
+}
 .invalid-feedback-custom {
     @extend .invalid-feedback;
     position: absolute;
@@ -221,7 +230,7 @@ span {
     z-index: 3;
 }
 .slider-image-container:hover {
-filter: opacity(0.8);
+filter: opacity(0.9);
 }
   
 @media only screen and (min-width: 992px) {

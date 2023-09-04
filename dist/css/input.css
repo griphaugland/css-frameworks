@@ -12037,6 +12037,7 @@ h3, .h3 {
 
 .logo-container {
   min-width: 170px;
+  max-width: 500px;
 }
 
 .art-vector-container {
@@ -12059,7 +12060,6 @@ h3, .h3 {
   font-weight: 600;
   height: 40px;
   width: 100%;
-  max-width: 500px;
   border: 2px solid white;
   padding-left: 0.5rem;
   border-radius: 5px;
@@ -12067,6 +12067,17 @@ h3, .h3 {
 }
 .input-group-custom::placeholder, .input-group-custom :active, .input-group-custom :focus {
   color: #888585;
+}
+
+form {
+  max-width: 300px;
+}
+
+.line {
+  height: 300px;
+  width: 2px;
+  color: #0D3B66;
+  background-color: #0D3B66;
 }
 
 .invalid-feedback-custom {
@@ -12110,7 +12121,7 @@ span {
 }
 
 .slider-image-container:hover {
-  filter: opacity(0.8);
+  filter: opacity(0.9);
 }
 
 @media only screen and (min-width: 992px) {
