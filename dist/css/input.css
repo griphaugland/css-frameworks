@@ -11886,7 +11886,7 @@ textarea.form-control-lg {
   border: none;
 }
 .btn-custom:hover, .btn-custom-secondary:hover {
-  background-color: #4282b6;
+  background-color: #fff;
 }
 .btn-custom-follow {
   color: white;
@@ -11897,7 +11897,7 @@ textarea.form-control-lg {
   box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
 }
 .btn-custom-follow:hover {
-  background-color: white;
+  background-color: #fff;
 }
 .btn-custom-new-post {
   background-color: #F95738;
@@ -11913,7 +11913,7 @@ textarea.form-control-lg {
   box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
 }
 .btn-custom-discover {
-  background-color: white;
+  background-color: #fff;
   color: #0D3B66;
   width: 170px;
   height: 60px;
@@ -11937,6 +11937,11 @@ textarea.form-control-lg {
   gap: 0.6rem;
   font-weight: 600;
   box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+  border: 2px solid #F95738;
+  background-color: white;
 }
 
 .font-normal {
@@ -11999,6 +12004,11 @@ textarea.form-control-lg {
 
 .navbar-nav li a {
   color: #F95738;
+}
+
+#searchInput {
+  display: none;
+  transition: 0.3s;
 }
 
 .ham-bar {

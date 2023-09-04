@@ -16,7 +16,7 @@
     height: 35px;
     border: none;
     &:hover {
-    background-color: $custom-hover;
+    background-color: $white;
     }
     &-follow {
         color: $tertiary;
@@ -26,7 +26,7 @@
         background-color: $complimentary;
         box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
         &:hover {
-            background-color: $tertiary;
+            background-color: $white;
         }
     }
     &-new-post {
@@ -43,7 +43,7 @@
         box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
     }
     &-discover {
-        background-color: $tertiary;
+        background-color: $white;
         color: $secondary;
         width: 170px;
         height: 60px;
@@ -68,6 +68,10 @@
         font-weight: 600;;
         box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.25);
     }
+}
+.btn:hover {
+    border: 2px solid $complimentary;
+    background-color: white;
 }
 .font-normal {
   font-family: $font-family-base;
@@ -122,6 +126,10 @@
     color: $complimentary;
 }
 
+#searchInput {
+    display: none;
+    transition: 0.3s;
+}
 .ham-bar {
     display: block;
     width: 1.5rem;

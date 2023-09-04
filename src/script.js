@@ -28,3 +28,18 @@
   new Splide( '#slider32-feed' ).mount();
   new Splide( '#slider33-feed' ).mount();
   
+
+const searchBtn = document.getElementById('searchBtn');
+const searchInput = document.getElementById('searchInput')
+searchBtn.addEventListener('click', () => {
+  if(searchInput.style.display = "none"){
+    searchInput.style.display = "inline-flex";
+    searchBtn.style.width = "auto"
+  }
+  else if ( searchInput.style.display = "block"){
+    searchInput.style.display = "none";
+  }
+  else {
+    searchInput.style.display = "none";
+  }
+})
